@@ -1,0 +1,49 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<div class="starter-template">
+  <h1>DCentn Github Bot</h1>
+  <hr>
+  <div>
+    <h3>Tasks</h3>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <input type="text" id="topicSearch" value="crypto">
+      <button type="button" class="btn btn-primary" onclick="handleTopicSearch()">Search Topics</button>
+    </div>
+        <p>
+      <i>
+        search topics or
+        <a href="https://github.com/topics" target="_blank">
+          Pick a GitHub topic.
+        </a>
+      </i>
+    </p>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <input type="text" id="topic" value="gig">
+      <button type="button" class="btn btn-primary" onclick="handleClick()">Get Topic</button>
+    </div>
+    <p>
+      <i>test with topic gig to ensure everything is running well</i>
+    </p>
+  </div>
+  <div id="searchResult"></div>
+  <br>
+  <div>
+    <h3>Task Status</h3>
+    <br>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Status</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody id="tasks">
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

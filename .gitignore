@@ -1,0 +1,8 @@
+.idea
+*.pyc
+__pycache
+.DS_Store
+/reports/
+/project/logs/celery.log
+/db-dcentn-redis/
+/db-dcentn-neo4j/
